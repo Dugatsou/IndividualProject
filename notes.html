@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notekeeper</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+ <link rel="stylesheet" href="night.min.css" />
+<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css" />
+<script src="jquery-1.11.1.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<body>
+
+	<div data-role="page" data-theme ="b">
+		<div data-role="header">
+			<h1>Tasks</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+		<form>
+			<div class="ui-field-contain">
+				<input id="title" type="text" placeholder="Title a task" />
+			</div>
+      <div class ="ui-field-contain">
+        <input id="taskDate" type ="text" placeholder="MM/DD/YYYY" />
+      </div>
+			<div class="ui-field-contain">
+				<textarea id="task" placeholder="The details of your task"></textarea>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<input id="btnNoThanks" type="submit" value="Cancel" />
+				</div>
+				<div class="ui-block-b">
+					<input id="btnAddNote" type="button" value="Add Note" />
+				</div>
+			</div>
+		</form>
+
+		<ul id="notesList" data-role="listview" data-inset="true"></ul>
+	</div>
+
+	<div data-role="footer" class="footer-docs">
+		<h5>Salisbury University</h5>
+	</div>
+	</div>
+
+</body>
+</html>
+
